@@ -75,7 +75,7 @@ button {
 /*---header---*/
 .page-header {
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
 .page-header-container {
@@ -114,6 +114,8 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
+  position: relative;
+  padding-bottom: 32px;
 }
 
 .menu .link:hover,
@@ -126,6 +128,18 @@ button {
 }
 .menu .link.current {
   color: var(--accent-color);
+}
+.link.current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 28px;
+  background-color: var(--accent-color);
 }
 .contacts-page {
   display: flex;
@@ -258,6 +272,20 @@ button {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
+}
+.rezume-item {
+  position: relative;
+}
+.rezume-item-box {
+position: absolute;
+}
+.rezume-title-list {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-dark);
 }
 /*---section 4---*/
 .team {
