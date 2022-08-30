@@ -275,9 +275,9 @@ button {
 }
 .rezume-item {
   position: relative;
-}
-.rezume-item-box {
-position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .rezume-title-list {
   font-weight: 700;
@@ -285,7 +285,13 @@ position: absolute;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
-  color: var(--primary-text-color-theme-dark);
+  color: var(--primary-text-color-theme-light);
+  background-color: rgba(47, 48, 58, 0.8);
+
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
 }
 /*---section 4---*/
 .team {
