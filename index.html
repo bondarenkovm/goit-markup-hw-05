@@ -56,7 +56,16 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button button" type="button">Замовити послугу</button>
+          <button class="hero-button button" type="button" data-modal-open>Замовити послугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-close" data-modal-close>
+              <svg width="18" height="18">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <!--section 2-->
@@ -117,16 +126,22 @@
           <h2 class="rezume-title">Чим ми займаємося</h2>
           <ul class="rezume-list list">
             <li class="rezume-item">
-              <img src="./images/resume/box-1.jpg" alt="Розробка коду" width="370" />
-              <h3 class="rezume-title-list">Десктопні додатки</h3>
+              <div class="rezume-box">
+                <img src="./images/resume/box-1.jpg" alt="Розробка коду" width="370" />
+                <h3 class="rezume-title-list">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="rezume-item">
-              <img src="./images/resume/box-2.jpg" alt="Розробка додатків" width="370" />
-              <h3 class="rezume-title-list">Мобільні додатки</h3>
+              <div class="rezume-box">
+                <img src="./images/resume/box-2.jpg" alt="Розробка додатків" width="370" />
+                <h3 class="rezume-title-list">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="rezume-item">
-              <img src="./images/resume/box-3.jpg" alt="Розробка ігор" width="370" />
-              <h3 class="rezume-title-list">Дизайнерські рішення</h3>
+              <div class="rezume-box">
+                <img src="./images/resume/box-3.jpg" alt="Розробка ігор" width="370" />
+                <h3 class="rezume-title-list">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
